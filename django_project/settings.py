@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from environs import Env
 
-env = Env() # new
-env.read_env() # new
+env = Env()
+env.read_env()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -160,3 +160,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "jontutos123@gmail.com"
 
 EMAIL_HOST_PASSWORD = "pgjv xpwg mrrp gyid"
+
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_SECURE = True
